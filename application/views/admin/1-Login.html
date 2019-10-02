@@ -1,0 +1,138 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Login Page</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <header class="text-center">
+        <div class="container">
+            <div class="row">
+
+               	<div class="logo-Wrapper center-block">
+                <a class="navbar-brand" href="#">
+                    <img alt="Dukkani" src="assets/img/logo.png">
+                </a>
+				</div>
+
+            </div>
+        </div>
+    </header>
+    <div id="navigation">
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-default">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                        aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Admin</a></li>
+                            <li><a href="#">Sub-Admin</a></li>
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">Users</a></li>
+                            <li><a href="#">Orders</a></li>
+                            <li><a href="#">Grocery &amp; Stores</a></li>
+                            <li><a href="#">Settings</a></li>
+                            <li>
+                                <select>
+                                    <option>English</option>
+                                    <option>English</option>
+                                    <option>English</option>
+                                </select>
+                            </li>
+                        </ul>
+
+
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </nav>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12 center-block">
+                <form class="login" id="loginForm">
+                    <h2 class="heading">Login</h2>
+                    <label for="Email">Email</label>
+                    <input type="email" id="Email" name="email" class="form-control" placeholder="me@example.com" required>
+                    <label for="inputPassword">Password</label>
+                    <input type="password" id="Password" class="form-control" name="password" placeholder="**********"  required>
+					<a href="#" class="forget">Forgot Password?</a>
+ 
+                    <button class="btn btn-lg btn-primary btn-block button" type="submit">Login</button>
+                </form>
+
+            </div>
+        </div>
+        <!-- /container -->
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>
+            window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.12.0.min.js"><\/script>')
+        </script>
+        <script src="assets/js/bootstrap.min.js"></script>
+		 <script src="assets/js/jquery.validate.js"></script>
+        <script src="assets/js/main.js"></script>
+
+<script type="text/javascript">
+// validate login form on keyup and submit
+		$("#loginForm").validate({
+			rules: {
+				email: {
+					required: true,
+					email: true
+				},
+				password: {
+					required: true,
+					minlength: 5
+				},
+				
+			},
+			messages: {
+				
+				password: {
+					required: "Please provide a password",
+					minlength: "Your password must be at least 5 characters long"
+				},
+				
+				email: "Please enter a valid email address",
+				
+			}
+		});
+
+</script>
+</body>
+
+</html>

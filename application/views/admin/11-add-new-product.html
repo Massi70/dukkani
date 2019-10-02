@@ -1,0 +1,215 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Edit Store Page</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <header class="text-center">
+        <div class="container">
+            <div class="row">
+
+               <div class="logo-Wrapper center-block">
+                <a class="navbar-brand" href="#">
+                    <img alt="Dukkani" src="assets/img/logo.png">
+                </a>
+				</div>
+
+            </div>
+        </div>
+    </header>
+    <div id="navigation">
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-default">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                        aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#">Admin</a></li>
+                            <li><a href="#">Sub-Admin</a></li>
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">Users</a></li>
+                            <li><a href="#">Orders</a></li>
+                            <li class="active"><a href="#">Grocery &amp; Stores</a></li>
+                            <li><a href="#">Settings</a></li>
+                            <li>
+                                <select>
+                                    <option>English</option>
+                                    <option>English</option>
+                                    <option>English</option>
+                                </select>
+                            </li>
+                        </ul>
+
+
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </nav>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="main">
+	<div class="container">
+
+        <div class="row">
+            <div class="col-md-12 center-block">
+			<h2 class="title">Add New Store</h2>
+<form class="storeAdmin" method="post" action="javascript:void">
+<div class="col-md-8 col-xs-12">
+<div class="col-md-6 col-xs-12">
+<label for="select-name">Select Store</label>
+<select id="select-name" class="form-control" name="store" required>
+<option value=""></option>
+                                    <option>ASDA</option>
+                                   <option>ASDA</option>
+                                    <option>ASDA</option>
+                                </select>
+</div>
+<div class="clearfix"></div>
+<div class="col-md-6 col-xs-12">
+<label for="product-name">Product Name</label>
+<input type="text" id="product-name" class="form-control" name="name" placeholder="Hershey's Syrop is...">
+</div>
+
+<div class="col-md-6 col-xs-12">
+<label for="select-name">Category</label>
+<select id="select-name" class="form-control" name="category" required>
+<option value=""></option>
+                                    <option>Food</option>
+                                      <option>Food</option>
+                                      <option>Food</option>
+                                </select>
+</div>
+
+
+
+<div class="col-md-12 col-xs-12">
+<label for="pro-des">Products Description</label>
+ <textarea class="form-control" rows="5" id="pro-des" placeholder="Hershey's Syrop is..."></textarea>
+</div>
+
+<div class="col-md-5 col-xs-12">
+<label for="contact-name"></label>
+ <button type="button" class=" btn btn-lg button buttonMd buttondark">Add New Filter</button>
+</div>
+
+<div class="col-md-7 col-xs-12">
+<ul>
+<li><label for="size">Size</label>
+<input type="text" id="size" class="form-control" placeholder="S"></li>
+<li> <label for="size">Color</label>
+<input type="text" id="size" class="form-control" placeholder="S">
+</li>
+<li> <label for="size">Other</label>
+<input type="text" id="size" class="form-control" placeholder="S"></li>
+</ul>
+
+<div class="pricefilter">
+<label for="size">Price Per Item</label>
+<input type="text" id="productName" class="form-control" placeholder="$9.00">
+</div>
+
+
+</div>
+<div class="col-md-12 col-xs-12">
+<input type="submit" value="Add Now" class="btn button buttonMd" >
+</div>
+</div>
+<div class="col-md-4 col-xs-12">
+ <div class="image-sec-pro">
+                        <label for="logo">Photos</label>
+                        <img src="assets/img/pro-1.png" alt="product1">
+                        <span class="label milabel">1</span>
+                        <i class="fa fa-close miClose"></i>
+                        <div class="imgsecpro-btn">
+                            
+                            <button type="button" class="btn button buttonMd buttondark">ADD NEW Image</button>
+                            
+                        </div>
+                        
+                        <ul class="subpro">
+                        <li><img src="assets/img/subpro-1.png" alt="sub product" />
+                        
+                        </li>
+                        <li><img src="assets/img/subpro-1.png" alt="sub product" />
+                        
+                        </li>
+                        <li><img src="assets/img/subpro-1.png" alt="sub product" />
+                        
+                        </li>
+                        </ul>
+                        
+    </div>
+</div>
+</form>               
+			   
+
+            </div>
+        </div>
+	</div>
+        <!-- /container -->
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>
+            window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.12.0.min.js"><\/script>')
+        </script>
+        <script src="assets/js/bootstrap.min.js"></script>
+		
+       <script src="assets/js/jquery.validate.js"></script>
+        <script src="assets/js/main.js"></script>
+
+<script type="text/javascript">
+// validate login form on keyup and submit
+
+		$(".storeAdmin").validate({
+			rules: {
+				name: "required",
+				store: "required",
+			
+				
+			},
+			messages: {
+				name: "Please enter your name",
+				store: "Please enter your store",
+				
+				
+			}
+		});
+
+</script>
+
+
+</body>
+
+</html>

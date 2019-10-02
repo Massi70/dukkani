@@ -1,0 +1,462 @@
+/*
+Theme Name:Dukkani
+Theme URI: dukkani.com
+Version: 1.0.0
+Author: MI Dexigner
+Author URI: http://midexigner.com/
+*/
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+/* * A better looking default horizontal rule */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/* * Remove default fieldset styles. */
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* * Allow only vertical resizing of textareas. */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Roboto Font Family
+   ========================================================================== */
+@font-face {
+  font-family: "Roboto thin";
+  src: local(Roboto Thin), url("../fonts/roboto/Roboto-Thin.woff2") format("woff2"), url("../fonts/roboto/Roboto-Thin.woff") format("woff"), url("../fonts/roboto/Roboto-Thin.ttf") format("truetype");
+  fonts-weight: 200; }
+
+@fonts-face {
+  fonts-family: "Roboto light";
+  src: local(Roboto Light), url("../fonts/roboto/Roboto-Light.woff2") format("woff2"), url("../fonts/roboto/Roboto-Light.woff") format("woff"), url("../fonts/roboto/Roboto-Light.ttf") format("truetype");
+  fonts-weight: 300; }
+
+@fonts-face {
+  fonts-family: "Roboto regular";
+  src: local(Roboto Regular), url("../fonts/roboto/Roboto-Regular.woff2") format("woff2"), url("../fonts/roboto/Roboto-Regular.woff") format("woff"), url("../fonts/roboto/Roboto-Regular.ttf") format("truetype");
+  fonts-weight: 400; }
+
+@fonts-face {
+  fonts-family: "Roboto medium";
+  src: url("../fonts/roboto/Roboto-Medium.woff2") format("woff2"), url("../fonts/roboto/Roboto-Medium.woff") format("woff"), url("../fonts/roboto/Roboto-Medium.ttf") format("truetype");
+  fonts-weight: 500; }
+
+@fonts-face {
+  fonts-family: "Roboto bold";
+  src: url("../fonts/roboto/Roboto-Bold.woff2") format("woff2"), url("../fonts/roboto/Roboto-Bold.woff") format("woff"), url("../fonts/roboto/Roboto-Bold.ttf") format("truetype");
+  fonts-weight: 700; }
+
+/* ==========================================================================
+   Basic style
+   ========================================================================== */
+body{
+    background: #fbffcc;
+    color: #576966;
+	font: 14px "Roboto regular", Arial, Helvetica, sans-serif;
+}
+a {
+	color: #576966;
+	text-decoration: none;
+}
+a:visited {
+	color: #576966;
+	text-decoration: none;
+}
+a:hover {
+	color: #fbffcc;
+	text-decoration: none;
+}
+a:focus, a:hover, a:active {
+	outline: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 600;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	color: #576966;
+	}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	color: #576966;
+}
+h1 {
+	font-size: 40px;
+}
+h2 {
+	font-size: 34px;
+}
+h3 {
+	font-size: 30px;
+}
+h4 {
+	font-size: 24px;
+}
+h5 {
+	font-size: 20px;
+}
+h6 {
+	font-size: 16px;
+}
+p strong {
+	font-weight: 600;
+}
+p em {
+	font-style: italic;
+}
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+*zoom: 1;
+}
+.left-side {
+	float: left;
+}
+.right-side {
+	float: right;
+}
+::-webkit-input-placeholder {
+     color:#5ebe99;
+}
+:-moz-placeholder {
+    color:#5ebe99;
+}
+::-moz-placeholder {
+   color:#5ebe99;
+}
+:-ms-input-placeholder {
+    color:#5ebe99;
+}
+/* ==========================================================================
+   Header
+   ========================================================================== */
+header {
+    height: 173px;
+}
+
+header .navbar-brand {
+    width: 198px;
+    height: 121px;
+    padding-top: 15px;
+    margin: 0px 24.5em;
+    text-indent: -9999px;
+    
+}
+#navigation{
+    background: #899128;
+    height: 50px;
+}
+#navigation .navbar-default{
+    background: none;
+    border: none;
+}
+#navigation .navbar-default .navbar-nav > li{
+    font-size: 16px;
+	margin-right: 1em;
+}
+#navigation .navbar-default .navbar-nav > li > a {
+    color: #fbffcc;
+    font-family: "Roboto regular", sans-serif;
+    padding: 15px 25px;
+}
+#navigation .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #fbffcc;
+    background:none;
+    font-family: "Roboto regular", sans-serif;
+    border-bottom: 4px solid #fff; 
+    text-transform: uppercase;
+}
+#navigation select{
+    display: block;
+    width: 100%;
+    height: 33px;
+    padding: 6px 12px;
+    font-size: 15px;
+    line-height: 1.42857143;
+    color: #899128;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #5ebe99;
+    margin-top: .5em;
+    }
+
+
+/* ==========================================================================
+   Login style
+   ========================================================================== */
+
+.login {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.login .heading{
+    font-size: 24px;
+    font-family:"Roboto regular", sans-serif;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.login .form-control {
+  position: relative;
+  height: 30px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  color:#5ebe99;
+
+}
+.login .form-control:focus {
+  z-index: 2;
+      box-shadow: none;      
+}
+
+.login .form-control::-webkit-input-placeholder {
+  color:#5ebe99;
+}
+.login .form-control::-moz-input-placeholder {
+  color:#5ebe99;
+}
+.login .form-control::-ms-input-placeholder {
+  color:#5ebe99;
+}
+.login label{
+	font:12px "Roboto regular", Arial, Helvetica, sans-serif;
+}
+
+.login input[type="email"] {
+   margin-bottom:20px;
+    border-radius: 0;
+}
+.login input[type="password"] {
+   margin-bottom:18px;
+       border-radius: 0;
+}
+.login a{
+	margin-bottom:20px;
+	display:block;
+	color:#899128;
+	font:12.6px "Roboto regular", Arial, Helvetica, sans-serif;
+}
+
+.login button[type="submit"] {
+ font:15px "Roboto regular", Arial, Helvetica, sans-serif;
+ text-transform:uppercase;
+}
+
+
+/* ==========================================================================
+ Button style
+   ========================================================================== */
+.button{
+	background-color:#283b49;
+}
+.button:hover,.button:active, .button:active:hover{background-color:#283b49;}
+
+/* ==========================================================================
+   page wraper style
+   ========================================================================== */
+.main .title{
+	font-size: 24px;
+    font-family:"Roboto regular", sans-serif;
+    text-align: center;
+    margin-bottom: 50px;
+	text-transform: capitalize;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/* * Hide visually and from screen readers */
+
+.hidden {
+    display: none !important;
+}
+
+/* * Hide only visually, but have it available for screen readers: */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/* * Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*  * Hide visually and from screen readers, but maintain layout */
+
+.invisible {
+    visibility: hidden;
+}
+
+
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.   
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables*/
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

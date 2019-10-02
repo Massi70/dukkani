@@ -1,0 +1,933 @@
+/*
+Theme Name:Dukkani
+Theme URI: dukkani.com
+Version: 1.0.0
+Author: MI Dexigner
+Author URI: http://midexigner.com/
+*/
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+	color: #222;
+	font-size: 1em;
+	line-height: 1.4;
+	left: 0px;
+}
+
+::-moz-selection {
+ background: #b3d4fc;
+ text-shadow: none;
+}
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+/* * A better looking default horizontal rule */
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+audio, canvas, iframe, img, svg, video {
+	vertical-align: middle;
+}
+/* * Remove default fieldset styles. */
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+/* * Allow only vertical resizing of textareas. */
+
+textarea {
+	resize: vertical;
+}
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
+}
+/* ==========================================================================
+   Roboto Font Family
+   ========================================================================== */
+@font-face {
+	font-family: "Roboto thin";
+	src: local(Roboto Thin), url("../fonts/roboto/Roboto-Thin.woff2") format("woff2"), url("../fonts/roboto/Roboto-Thin.woff") format("woff"), url("../fonts/roboto/Roboto-Thin.ttf") format("truetype");
+	fonts-weight: 200;
+}
+ @fonts-face {
+ fonts-family: "Roboto light";
+ src: url("../fonts/roboto/Roboto-Light.woff2") format("woff2"), url("../fonts/roboto/Roboto-Light.woff") format("woff"), url("../fonts/roboto/Roboto-Light.ttf") format("truetype");
+ fonts-weight: 300;
+}
+ @fonts-face {
+ fonts-family: "Roboto regular";
+ src: url("../fonts/roboto/Roboto-Regular.woff2") format("woff2"), url("../fonts/roboto/Roboto-Regular.woff") format("woff"), url("../fonts/roboto/Roboto-Regular.ttf") format("truetype");
+ fonts-weight: 400;
+}
+ @fonts-face {
+ fonts-family: "Roboto medium";
+ src: url("../fonts/roboto/Roboto-Medium.woff2") format("woff2"), url("../fonts/roboto/Roboto-Medium.woff") format("woff"), url("../fonts/roboto/Roboto-Medium.ttf") format("truetype");
+ fonts-weight: 500;
+}
+ @fonts-face {
+ fonts-family: "Roboto bold";
+ src: url("../fonts/roboto/Roboto-Bold.woff2") format("woff2"), url("../fonts/roboto/Roboto-Bold.woff") format("woff"), url("../fonts/roboto/Roboto-Bold.ttf") format("truetype");
+ fonts-weight: 700;
+}
+/* ==========================================================================
+   Basic style
+   ========================================================================== */
+body {
+	background: #fbffcc;
+	color: #576966;
+	font: 14px "Roboto regular", Arial, Helvetica, sans-serif;
+	margin-bottom: 40px;
+}
+a {
+	color: #576966;
+	text-decoration: none;
+}
+a:visited {
+	color: #576966;
+	text-decoration: none;
+}
+a:hover {
+	color: #576966;
+	text-decoration: none;
+}
+a:focus, a:hover, a:active {
+	outline: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 600;
+	font-family: "Roboto regular", Arial, Helvetica, sans-serif;
+	color: #576966;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	color: #576966;
+}
+h1 {
+	font-size: 40px;
+}
+h2 {
+	font-size: 34px;
+}
+h3 {
+	font-size: 30px;
+}
+h4 {
+	font-size: 24px;
+}
+h5 {
+	font-size: 20px;
+}
+h6 {
+	font-size: 16px;
+}
+p strong {
+	font-weight: 600;
+}
+p em {
+	font-style: italic;
+}
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+*zoom: 1;
+}
+.left-side {
+	float: left;
+}
+.right-side {
+	float: right;
+}
+:-webkit-input-placeholder {
+ color:#5ebe99;
+}
+:-moz-placeholder {
+ color:#5ebe99;
+}
+:-moz-placeholder {
+ color:#5ebe99;
+}
+:-ms-input-placeholder {
+ color:#5ebe99;
+}
+/* ==========================================================================
+   Header
+   ========================================================================== */
+header {
+	height: 173px;
+}
+.logo-Wrapper{
+	width: 310px;
+	margin:0px auto;
+}
+header .navbar-brand {
+	width: 198px;
+	height: 121px;
+	padding-top: 15px;
+	
+	text-indent: -9999px;
+}
+#navigation {
+	background: #899128;
+	height: 54px;
+}
+#navigation .navbar-default {
+	background: none;
+	border: none;
+}
+#navigation .navbar-default .navbar-nav > li {
+	font-size: 16px;
+}
+#navigation .navbar-default .navbar-toggle .icon-bar {
+    background-color: #5ebe99;
+}#navigation .navbar-default .navbar-toggle {
+    border-color: #5ebe99;
+}#navigation .navbar-default .navbar-toggle:hover,#navigation .navbar-default .navbar-toggle:focus{
+	background-color:#fbffcc;}
+#navigation .navbar-default .navbar-nav > li > a {
+	color: #fbffcc;
+	font-family: "Roboto regular", sans-serif;
+	padding: 15px 25px;
+	text-transform: uppercase;
+}
+#navigation .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	color: #fbffcc;
+	background: none;
+	font-family: "Roboto regular", sans-serif;
+	border-bottom: 4px solid #fff;
+	text-transform: uppercase;
+}
+#navigation select {
+	display: block;
+	width: 100%;
+	height: 33px;
+	padding: 6px 12px;
+	font-size: 15px;
+	line-height: 1.42857143;
+	color: #899128;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #5ebe99;
+	margin-top: .5em;
+}
+/* ==========================================================================
+   forms
+   ========================================================================== */
+label {
+	font: 12.6px "Roboto regular", sans-serif;
+	color: #283b49;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin-bottom: 8px;
+}
+input[type="email"], input[type="text"], input[type="url"], input[type="tel"], input[type="password"], select, textarea {
+	border-radius: 0;
+	margin-bottom: 20px;
+}
+/* ==========================================================================
+   Login style
+   ========================================================================== */
+
+.login {
+	max-width: 330px;
+	padding: 15px;
+	margin: 0 auto;
+}
+.login .heading {
+	font-size: 24px;
+	font-family: "Roboto regular", sans-serif;
+	text-align: center;
+	margin-bottom: 50px;
+}
+.login .form-control {
+	position: relative;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 6px 12px;
+	font-size: 16px;
+	border: none;
+	color: #5ebe99;
+	box-shadow: none;
+	resize: none;
+}
+.login .form-control:focus {
+	z-index: 2;
+	box-shadow: none;
+}
+ .login .form-control::-webkit-input-placeholder {
+ color:#5ebe99;
+}
+.login .form-control::-moz-input-placeholder {
+ color:#5ebe99;
+}
+.login .form-control::-ms-input-placeholder {
+ color:#5ebe99;
+}
+.login label {
+	font: 12px "Roboto regular", Arial, Helvetica, sans-serif;
+}
+.login input[type="email"] {
+	margin-bottom: 20px;
+	border-radius: 0;
+}
+.login input[type="password"] {
+	margin-bottom: 18px;
+	border-radius: 0;
+}
+.login a {
+	margin-bottom: 20px;
+	display: block;
+	color: #899128;
+	font: 12.6px "Roboto regular", Arial, Helvetica, sans-serif;
+}
+.login button[type="submit"] {
+	font: 15px "Roboto regular", Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+}
+/* ==========================================================================
+ Button style
+   ========================================================================== */
+
+.button, .button:hover, .button:active, .button:visited .button:active:hover {
+	background-color: #283b49;
+	color: #fff;
+	font: 16px "Roboto regular", Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	border: none;
+}
+.buttonMd {
+	width: 258px;
+	height: 39px;
+	color: #fff;
+}
+.buttonLg {
+	width: 358px;
+	height: 45px;
+	color: #fff;
+}
+.buttondark {
+	background: #899128;
+}
+/* ==========================================================================
+   page wraper style
+   ========================================================================== */
+.main .title {
+	font-size: 24px;
+	font-family: "Roboto regular", sans-serif;
+	text-align: center;
+	margin-bottom: 50px;
+	text-transform: capitalize;
+	font-weight: normal;
+	color: #576966;
+}
+.main .bottom {
+	width: 100%;
+	max-width: 366px;
+	margin: 0px auto;
+}
+.admin-table {
+	width: 100%;
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+	vertical-align: middle;
+	border: none;
+	color: #576966;
+}
+.admin-table tr > td {
+	border: 1px solid #effac8 !important;
+}
+.admin-table tr > td:nth-child(5) {
+	text-align: center;
+}
+.admin-table > tfoot > tr > td {
+	border: none !important;
+}
+.admin-table tr > td img {
+	width: 37px;
+	height: 37px;
+}
+.admin-table tr > .imgTable {
+	width: 63px;
+}
+.admin-table tr > .nameTable {
+	width: 800px;
+}
+.admin-table tr > .idTable {
+	width: 177px;
+}
+.admin-table tr > .orderTable {
+	width: 190px;
+}
+.admin-table tr > .viewTable {
+	width: 122px;
+	text-align: center;
+}
+.subAdmin {
+	width: 100%;
+}
+.subAdmin label {
+	font: 12.6px "Roboto regular", sans-serif;
+	color: #283b49;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin-bottom: 8px;
+}
+.subAdmin .form-control {
+	position: relative;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 6px 12px;
+	font-size: 16px;
+	border: none;
+	color: #5ebe99;
+	box-shadow: none;
+	resize: none;
+}
+.subAdmin .form-control:focus {
+	z-index: 2;
+	box-shadow: none;
+}
+.subAdmin .form-control input[type="text"] {
+	position: relative;
+}
+.subAdmin .form-control:before {
+	font-family: 'FontAwesome';
+	position: absolute;
+	top: 0px;
+	left: -5px;
+	content: "\f007";
+	background-image: url(adminpanel/assets/img/edit.png);
+}
+.icon {
+	height: 15px;
+	width: 15px;
+	border: none;
+	cursor: pointer;
+	color: white;
+	position: absolute;
+	background-image: url(../img/edit.png);
+	background-repeat: no-repeat;
+	top: 33px;
+	right: 24px;
+}
+.subAdmin .form-control::-webkit-input-placeholder {
+ color:#5ebe99;
+}
+.subAdmin .form-control::-moz-input-placeholder {
+ color:#5ebe99;
+}
+.subAdmin .form-control ::-ms-input-placeholder {
+ color:#5ebe99;
+}
+/* ==========================================================================
+  user-table
+   ========================================================================== */
+.user-table {
+	width: 100%;
+}
+.user-table tr > td {
+	border: 1px solid #effac8 !important;
+}
+.user-table tr > td:nth-child(5) {
+	text-align: center;
+}
+.user-table > tfoot > tr > td {
+	border: none !important;
+}
+.user-table tr > td img {
+	width: 37px;
+	height: 37px;
+}
+.user-table tr > .imgTable {
+	width: 63px;
+}
+.user-table tr > .nameTable {
+	width: 800px;
+}
+.user-table tr > .idTable {
+	width: 177px;
+}
+.user-table tr > .orderTable {
+	width: 190px;
+}
+.user-table tr > .viewTable {
+	width: 122px;
+	text-align: center;
+}
+/* ==========================================================================
+  user-detail
+   ========================================================================== */
+.user-detail {
+	max-width: 175px;
+	margin: 0px auto;
+}
+.user-detail figure {
+	width: 120px;
+	height: 120px;
+	margin-bottom: 27px;
+}
+.user-detail figure img {
+	border-radius: 50%;
+}
+.user-detail h5 {
+	font-size: 16px;
+	font-family: "Roboto regular", sans-serif;
+}
+.nav-tabs {
+	border-bottom: 1px solid #5ebe99;
+}
+.nav-tabs > li > a:hover {
+	border-color: transparent;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+	color: #5ebe99;
+}
+.nav-tabs > li > a {
+	color: #5ebe99;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+	background-color: transparent;
+	border: none;
+	border-bottom: 3px solid #5ebe99;
+	color: #5ebe99;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+	background-color: transparent;
+	color: #5ebe99;
+}
+.tab-pane ul {
+	list-style: none;
+	margin-top: 52px;
+	margin-bottom: 46px;
+}
+.tab-pane ul li h5 {
+	font-size: 13.5px;
+	font-family: "Roboto bold", sans-serif;
+	color: #273d48;
+}
+.tab-pane ul li p {
+	font-size: 13.5px;
+	font-family: "Roboto light", sans-serif;
+	color: #0d8557;
+}
+/* ==========================================================================
+   orders-table
+   ========================================================================== */
+#orders .nav-tabs {
+	border-bottom: 1px solid #edf9c8;
+}
+#orders .nav-tabs > li > a {
+	color: #899128;
+	text-transform: uppercase;
+}
+#orders .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+	background-color: transparent;
+	border: none;
+	border-bottom: 3px solid #899128;
+	color: #899128;
+}
+#orders .nav > li > a:hover, .nav > li > a:focus {
+	background-color: transparent;
+	color: #899128;
+}
+.orders-table {
+	width: 100%;
+}
+.orders-table > thead > tr > th:nth-child(5), .orders-table > thead > tr > th:nth-child(4), .orders-table > thead > tr > th:nth-child(3) {
+	text-align: center;
+}
+.orders-table tr > td {
+	border: 1px solid #effac8 !important;
+}
+.orders-table tr > td:nth-child(6), .orders-table tr > td:nth-child(5), .orders-table tr > td:nth-child(4), .orders-table tr > td:nth-child(3) {
+	text-align: center;
+}
+.orders-table > tfoot > tr > td {
+	border: none !important;
+}
+.orders-table tr > td:nith(1) img {
+ width: 37px;
+ height: 37px;
+}
+.orders-table tr > .imgTable {
+	width: 63px;
+}
+.orders-table tr > .nameTable {
+	width: 565px;
+}
+.orders-table tr > .storeTable {
+	width: 240px;
+}
+.orders-table tr > .idTable {
+	width: 177px;
+}
+.orders-table tr > .orderTable {
+	width: 190px;
+}
+.orders-table tr > .viewTable {
+	width: 122px;
+	text-align: center;
+}
+/* ==========================================================================
+   order-deatils-list
+   ========================================================================== */
+.order-deatils-list-table {
+	width: 100%;
+	color: #525252;
+}
+.order-deatils-list-table thead > tr:first-child > th {
+	color: #525252;
+	font-size: 15.5px;
+	font-family: "Roboto light", sans-serif;
+}
+.order-deatils-list-table tr > td {
+	border: 1px solid #effac8 !important;
+	text-align: center;
+	font-size: 15.5px;
+	font-family: "Roboto light", sans-serif;
+}
+.order-deatils-list-table .noborder {
+	border-top: 1px solid #effac8 !important;
+	border-right: none !important;
+	border-left: none !important;
+	border-bottom: 1px solid #effac8 !important;
+}
+.order-deatils-list-table .noborders {
+	border: none !important;
+}
+.order-deatils-list-table > tfoot > tr > td {
+	border: none !important;
+}
+.order-deatils-list-table tr > td img {
+	width: 37px;
+	height: 37px;
+}
+.order-deatils-list-table tr > td.text-left{
+	text-align:left;
+}
+.order-deatils-list-table tr > .imgTable {
+	width: 63px;
+}
+.order-deatils-list-table tr > .nameTable {
+	width: 800px;
+}
+.order-deatils-list-table tr > .idTable {
+	width: 177px;
+}
+.order-deatils-list-table tr > .orderTable {
+	width: 190px;
+}
+.order-deatils-list-table tr > .viewTable {
+	width: 122px;
+	text-align: center;
+}
+/* ==========================================================================
+   store table
+   ========================================================================== */
+.store-table {
+	width: 100%;
+}
+.store-table tr > td {
+	border: 1px solid #effac8 !important;
+}
+.store-table tr > td:nth-child(5) {
+	/*text-align: center;*/
+}
+.store-table > tfoot > tr > td {
+	border: none !important;
+}
+.store-table tr > .viewTable {
+	width: 350px;
+	text-align: center;
+}
+.image-sec-pro {
+	width: 370px;
+	height: 425px;
+	border: 1px solid #e6e6e6;
+	background-color: #fafafa;
+	padding: 28px 50px;
+	border-radius: 2px;
+}
+.image-sec-pro label {
+	color: #000;
+	clear: both;
+	display: block;
+}
+.image-sec-pro img {
+	width: 267px;
+	height: auto;
+	margin-bottom: 20px;
+}
+.image-sec-pro .miClose {
+	position: absolute;
+	top: 4em;
+	right: 4em;
+	color: #fff;
+	font-weight: 600;
+	cursor: pointer;
+}
+.image-sec-pro .milabel {
+	position: absolute;
+	top: 5.5em;
+	left: 7em;
+	color: #fff;
+	font-weight: 600;
+	cursor: pointer;
+	background: #899128
+}
+.fa-close {
+	color: #fff;
+}
+.imgsec-btn a {
+	font: 15px "Roboto regular", Arial, Helvetica, sans-serif;
+	background-color: #899128;
+	height: 43px;
+	width: 199px;
+	padding: 12px 20px;
+	text-align: center;
+	color: #fff;
+	border: none;
+}
+.storeAdmin label {
+	font: 12.6px "Roboto regular", sans-serif;
+	color: #283b49;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin-bottom: 8px;
+}
+.storeAdmin .form-control {
+	position: relative;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 6px 12px;
+	font-size: 16px;
+	border: none;
+	color: #5ebe99;
+	box-shadow: none;
+	resize: none;
+}
+.storeAdmin .form-control:focus {
+	z-index: 2;
+	box-shadow: none;
+}
+ .storeAdmin .form-control::-webkit-input-placeholder {
+ color:#5ebe99;
+}
+.storeAdmin .form-control::-moz-input-placeholder {
+ color:#5ebe99;
+}
+.storeAdmin .form-control ::-ms-input-placeholder {
+ color:#5ebe99;
+}
+.storeAdmin input[type="submit"] {
+	font: 15px "Roboto regular", Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #fff;
+}
+.storeAdmin ul {
+	list-style: none;
+	float: left;
+}
+.storeAdmin li {
+	display: inline-block;
+	padding-top: 1em;
+	width:95px;
+}
+.storeAdmin li label {
+	font: 13px "Roboto regular", Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.storeAdmin .pricefilter {
+	width: 129px;
+    float: left;
+    margin: 13px 0px 0px 25px;
+}
+
+.image-sec-pro ul.subpro{    list-style: none;
+    margin: 0px 0px;
+    position: absolute;
+    left: 26px;}
+.image-sec-pro ul.subpro li {
+	display: inline-block;
+	
+}
+.image-sec-pro ul.subpro li img{
+	width:73px;}
+.image-sec-pro .subpro{
+	position:relative;	}
+	.image-sec-pro .subpro1{
+	    left: 11em;
+    margin-top: -4em;
+}
+
+	.image-sec-pro .subpro1{
+	    left: 11em;
+    margin-top: -4em;
+}
+
+/* ==========================================================================
+   Validate error 
+   ========================================================================== */
+ label.error, label.error {
+	font-size:11px;
+	color: red;
+	font-style: italic
+}
+div.error { display: none; }
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/* * Hide visually and from screen readers */
+
+.hidden {
+	display: none !important;
+}
+/* * Hide only visually, but have it available for screen readers: */
+
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+/* * Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: */
+
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+}
+/*  * Hide visually and from screen readers, but maintain layout */
+
+.invisible {
+	visibility: hidden;
+}
+.clearfix:before, .clearfix:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+.clearfix:after {
+	clear: both;
+}
+
+@media only screen and (min-width: 320px) {
+/* Style adjustments for viewports that meet the condition */
+.logo-Wrapper {
+    margin: 0 auto;
+    width: 236px;
+}
+.buttonLg {
+    color: #fff;
+    height: 45px;
+    width: auto;
+}
+
+#navigation .navbar-default .navbar-collapse, .navbar-default .navbar-form{ border: none;}
+}
+
+@media only screen and (max-width: 1024px) {
+/* Style adjustments for viewports that meet the condition */
+#navigation .navbar-default .navbar-nav > li > a {
+    color: #fbffcc;
+    font-family: "Roboto regular",sans-serif;
+    padding: 11px 4px;
+    text-transform: uppercase;
+}
+#navigation .navbar-default {
+    background: #899128;
+    border: none;
+	z-index:9999;
+}
+}
+
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
+/* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.   
+   ========================================================================== */
+
+@media print {
+*, *:before, *:after, *:first-letter, *:first-line {
+	background: transparent !important;
+	color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+	box-shadow: none !important;
+	text-shadow: none !important;
+}
+a, a:visited {
+	text-decoration: underline;
+}
+a[href]:after {
+	content: " (" attr(href) ")";
+}
+abbr[title]:after {
+	content: " (" attr(title) ")";
+}
+/*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+a[href^="#"]:after, a[href^="javascript:"]:after {
+	content: "";
+}
+pre, blockquote {
+	border: 1px solid #999;
+	page-break-inside: avoid;
+}
+/*
+     * Printing Tables*/
+
+thead {
+	display: table-header-group;
+}
+tr, img {
+	page-break-inside: avoid;
+}
+img {
+	max-width: 100% !important;
+}
+p, h2, h3 {
+	orphans: 3;
+	widows: 3;
+}
+h2, h3 {
+	page-break-after: avoid;
+}
+}
